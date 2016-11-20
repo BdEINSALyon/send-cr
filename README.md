@@ -19,6 +19,18 @@ PORT = 587
 TLS = True
 ```
 
+## Usage
+```bash
+python3 src/mailer/main.py -u http://example.com/teams/ca/cr.pdf http://example.com/teams/ca/cr2.pdf http://example.com/teams/bureau/cr.pdf
+```
+In this example, the script will send two mails : one for the CA with two CR, and one for the Buro with one CR.
+
+Files must respect the following naming convention :
+```
+YYYY_MM_DD_CA_CR.pdf
+YYYY_MM_DD_BUREAU_CR.pdf
+```
+
 ## Licence
 
 [![GNU GPL v3.0](http://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl.html)
